@@ -3,6 +3,21 @@ body {
     font-size: 14px;
  }
 
+#slides_control > div{
+/*  height: 200px;*/
+}
+img{
+  margin:auto;
+/*  width: 400px;*/
+}
+#slides_control {
+/*  position:absolute;*/
+/*  width: 400px;*/
+  left:50%;
+  top:20px;
+/* margin-left:-200px;*/
+}
+
 .rightSideBar{
 	border: 5px solid #eaeaea;
 	-webkit-box-shadow: 0 8px 6px -6px black;
