@@ -30,7 +30,7 @@
                     controller: "contactController",
                     templateUrl: "com/view/contact.html"
                 })
-				.otherwise({redirectTo: '/Programmes'});
+				.otherwise({redirectTo: '/Home'});
 
         });
 }());
