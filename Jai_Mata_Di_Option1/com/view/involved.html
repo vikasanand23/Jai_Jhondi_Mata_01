@@ -1,5 +1,31 @@
 <div class="homeInfo">
-   <h5 class="headerTxt">{{ title }}</h5>
-   <p class="homeContent">{{ calendar1Content }}</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6">
+				 <h5 class="headerTxt">{{ title }}</h5>
+   				 <p class="homeContent">{{ involvedContent }}</p>
+			</div>
+			<div class="col-xs-6">
+				<img ng-src="{{ imgSide }}" class="img-responsive rightSideBar" align="absmiddle" />
+			</div>
+		</div>
+	</div>
 </div>
-<img src="{{ imgPath }}" class="img-responsive constImage">
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<p class="sucessTxt"><strong>Volunteer</strong> and <strong>Donation.</strong></p>
+			<p class="descTxt">{{ aboutTagLine }}</p>
+		</div>
+	</div>
+	<div class="row progSucess">
+		<div class="col-xs-2 involvedDesc" ng-repeat="involvedlist in involvedLists">
+			 <div>
+				 <img ng-src="{{ involvedlist.volImg }}" class="img-responsive" align="absmiddle" />
+				 <h5>{{ involvedlist.name }}</h5>
+				 <h6>{{ involvedlist.description }}</h6>
+			</div> 
+		</div>
+	</div>
+</div>
