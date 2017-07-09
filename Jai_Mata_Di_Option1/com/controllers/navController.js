@@ -2,22 +2,55 @@
     function navFunc($scope) {
         $scope.logoImage = "images/logo_colour.png";
         $scope.navButtons = ["Home", "About Us", "Programmes", "Success Stories", "Updates", "Get Involved", "Contact us"];
-        $scope.btnActive = "About Us";
+        $scope.btnActive = "Programmes";
         $scope.updateActive = function(navButton) {
             $scope.btnActive = navButton;
             console.log($scope.btnActive);
         };
 		
-		$scope.carImg1 = "images/carImg1.jpg";
-		$scope.carImg2 = "images/carImg2.jpg";
-		$scope.carImg3 = "images/carImg3.jpg";
-		$scope.carImg4 = "images/carImg4.jpg";
-		$scope.carImg5 = "images/carImg5.jpg";
-		$scope.carImg6 = "images/carImg6.jpg";
-		$scope.carImg7 = "images/carImg7.jpg";
-		$scope.carImg8 = "images/carImg8.jpg";
-		$scope.carImg9 = "images/carImg9.jpg";
-		$scope.carImg10 = "images/carImg10.jpg";
+		 $scope.myInterval = 3000;
+		  $scope.slides = [
+			{
+			  image: 'images/carImg1.jpg',
+				FigCaption: 'Jhondi Mata Temple'
+			},
+			{
+			  image: 'images/carImg2.jpg',
+				FigCaption: 'Jhondi Mata Temple'
+			},
+			{
+			  image: 'images/carImg3.jpg',
+				FigCaption: 'Hanuman Temple'
+			},
+			{
+			  image: 'images/carImg4.jpg',
+				FigCaption: 'Jhondi Mata Temple'
+			},
+			{
+			  image: 'images/carImg5.jpg',
+				FigCaption: 'Jhondi Mata Temple'
+			},
+			{
+			  image: 'images/carImg6.jpg',
+				FigCaption: 'Shiv Shankar Temple'
+			},
+			{
+			  image: 'images/carImg7.jpg',
+				FigCaption: 'Vaishno Mata Temple'
+			},
+			{
+			  image: 'images/carImg8.jpg',
+				FigCaption: 'NGO work in Progress'
+			},
+			{
+			  image: 'images/carImg9.jpg',
+				FigCaption: 'NGO work in Progress'
+			},
+			{
+			  image: 'images/carImg10.jpg',
+				FigCaption: 'NGO work in Progress'
+			}
+		  ];
     }
     angular.module("app").controller("navController", navFunc);
 }());
