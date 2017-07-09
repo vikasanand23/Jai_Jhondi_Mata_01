@@ -2,7 +2,7 @@
     function navFunc($scope) {
         $scope.logoImage = "images/logo_colour.png";
         $scope.navButtons = ["Home", "About Us", "Programmes", "Success Stories", "Updates", "Get Involved", "Contact us"];
-        $scope.btnActive = "Programmes";
+        $scope.btnActive = "Home";
         $scope.updateActive = function(navButton) {
             $scope.btnActive = navButton;
             console.log($scope.btnActive);
