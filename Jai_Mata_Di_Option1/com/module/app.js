@@ -1,5 +1,5 @@
 (function() {
-    angular.module("app", ["ngRoute"])
+    angular.module("app", ["ngRoute", "ui.bootstrap"])
         .config(function($routeProvider) {
             $routeProvider
                 .when("/Home", {
@@ -30,7 +30,7 @@
                     controller: "contactController",
                     templateUrl: "com/view/contact.html"
                 })
-				.otherwise({redirectTo: '/Contact us'});
+				.otherwise({redirectTo: '/Programmes'});
 
         });
 }());
