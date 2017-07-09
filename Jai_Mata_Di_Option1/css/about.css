@@ -1,0 +1,27 @@
+.sucessTxt{
+	font-size: 20px;
+	text-align: center;
+	margin: 0px;
+    margin-top: 10px;
+}
+
+.descTxt{
+	font-size: 12px;
+	text-align: center;
+}
+
+.aboutSucess{
+	margin: 20px 0px;
+}
+
+.aboutSucess h4{
+	color: #D81A23;
+}
+
+.aboutSucess h5{
+	color: #000;
+}
+
+.aboutSucess h6{
+	color: #999;
+}
