@@ -126,6 +126,28 @@ form {
     margin-bottom: 0px;
 }
 
+/*// Carusal*/
+.carousel-control.left {
+    background-image: none;
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right{
+	color: #D81A23;
+	text-shadow: none;
+}
+
+.carousel-control{
+	opacity: 1;
+}
+
+.carousel-control:hover, .carousel-control:focus{
+	    color: transparent;
+}
+
 .constImage{
 	margin: 0px auto;
 }
